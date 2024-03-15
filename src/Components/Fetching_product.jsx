@@ -7,7 +7,7 @@ const Fetching_product = () => {
   return (
   
     <div>
-          <div className='bg-orange-500 pt-1 p-2'><h1 className='font-extrabold'>BD STORE</h1></div>
+         
       <Display_products products={products_info} key={uuidv4()} />
     </div>
   )

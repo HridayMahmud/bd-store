@@ -3,11 +3,14 @@ import React from 'react'
 const Display_products = (props) => {
  const {products,key} = props;
   return (
-    <div  className=' grid grid-cols-3 pt-4 '>
+      <div className="">
+
+<div className='bg-orange-500 w-full text-center pt-1 p-2'><h1 className='font-extrabold'>BD STORE</h1></div>
+<div  className='  grid grid-cols-1 lg:grid-cols-3 pt-4 '>
    {
     products.map((info)=>
-    <div key={key} className='Card  w-[420px]  mb-5  py-8 bg-white shadow-lg shadow-gray-300 rounded-xl '>
-      <div className="cards w-[380px] mx-auto py-4 space-y-2 border-2 rounded-xl border-gray-100 h-[400px]  ">
+    <div key={key} className='Card  w-[300px] lg:w-[420px]  mb-5  py-8 bg-white shadow-lg shadow-gray-300 rounded-xl '>
+      <div className="cards w-[280px] lg:w-[380px] mx-auto py-4 space-y-2 border-2 rounded-xl border-gray-100 h-[400px]  ">
         
     <figure>
       <img className='w-[250px] h-[180px] p-2 border-dashed border-2 border-gray-300 mx-auto rounded-xl mb-3' src={info.image} alt="clothes" />
@@ -25,6 +28,7 @@ const Display_products = (props) => {
    }
   
     </div>
+      </div>
   )
 }
 
